@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./Estilos/style.css">
+    <title>Gestión del Catálogo</title>
+</head>
+
+<body>
+    <h1>Alta de producto</h1>
+
+    <form id="altaGafaForm" method="POST" action="index.php" enctype="multipart/form-data">
+      <input class="controls" type="text" name="modelo" id="modelo" placeholder="Nombre del modelo" required>
+      <input class="controls" type="text" name="marca" id="marca" placeholder="Marca" required>
+      <input class="controls" type="text" name="tipo" id="tipo" placeholder="Tipo de producto" required>
+      <input class="controls" type="number" step="0.01" name="precio" id="precio" placeholder="Precio €" required>
+      <select name="edad" id="edad" required>
+        <option value="adulto">Adulto</option>
+        <option value="kid">Niño</option>
+      </select>
+      Imagen: (.jpeg/.png/.jpg/.svg)<input class="controls" type="file" name="foto" id="foto" required>
+
+        <input type="hidden" name="accion" value="gestionCatalogo">
+        <input type="hidden" name="id" value="2">
+        <button type=submit class="botons">Confirmar</button>
+    </form>
+
+</body>
+
+</html>	

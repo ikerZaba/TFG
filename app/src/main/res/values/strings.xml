@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CargoApp</string>
+    <string name="action_send">Send Product</string>
+    <string name="action_orders">Order Status</string>
+</resources>

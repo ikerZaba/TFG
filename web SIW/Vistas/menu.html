@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./Estilos/style.css">
+    <title>Menú</title>
+</head>
+
+<body>
+	<section class="form-menu">
+    <h1>ÓPTICA</h1>
+    <div id="opcionesLogin">
+		<h3>Login: </h3>
+        <div id="login">
+            <form id="loginform" method="POST" action="index.php">
+                <input type="text" name="user" id="user" placeholder="Usuario" required>
+                <input type="password" name="pswd" id="pswd" placeholder="Contraseña" required autofocus>
+                <input type="hidden" name="accion" value="login">
+                <input type="hidden" name="id" value="1">
+                <button type=submit>Ingreso</button>                
+            </form>
+        </div>
+        <div id="register">
+            <a href="index.php?accion=registrar&id=1">Régistrese</a>
+        </div>
+    </div>
+
+    <div id="opcionesFrontend">
+        <h2></h2>
+        <a href="index.php?accion=cita&id=1">Cita online</a><br>
+        <a href="index.php?accion=gafas&id=1">Catálogo</a><br>
+        <a href="index.php?accion=info&id=1">Quiénes somos</a><br>
+        <a href="index.php?accion=local&id=1">Encuéntranos</a><br>
+    </div>
+	</section>
+
+</body>
+
+</html>

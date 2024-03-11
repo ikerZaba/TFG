@@ -1,0 +1,4 @@
+vecinos: dento de mi red  puedo saber su MAC
+puedo hacer ping a cualquer ordenador (ip publica) <- nivel de red
+puedo simular conexion en UDP
+un router como minimo tiene que llegar a nivel de red pero tiene todos los niveles
